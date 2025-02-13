@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 4252343539868204802}
   - component: {fileID: 2849920607513445357}
   - component: {fileID: 5267611882220423767}
-  - component: {fileID: 5670420408942029697}
   m_Layer: 5
   m_Name: TeamPanel
   m_TagString: Untagged
@@ -118,9 +117,9 @@ RectTransform:
   - {fileID: 2116050238057568786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476.38892, y: -441.25366}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -470, y: 150}
   m_SizeDelta: {x: 909.4471, y: 197.4946}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2849920607513445357
@@ -161,23 +160,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5670420408942029697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268681563187947629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20b38f087fca64442af80a334de54228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inAnim: {fileID: 0}
-  outAnim: {fileID: 0}
-  properties:
-    layerPriority: 0
-  cells: []
 --- !u!1001 &1013157724018592922
 PrefabInstance:
   m_ObjectHideFlags: 0

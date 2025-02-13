@@ -1,6 +1,7 @@
 ﻿/*
  * 作者：阳贻凡
  */
+using MVC_UIFramework;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -26,12 +27,11 @@ namespace Demo
         [SerializeField] private Button teamBtn;
         //选中高光
         [SerializeField] private Image highlight;
-        //当前角色信息
-        private CharacterInfo characterInfo;
+
         /// <summary>
         /// 当前角色信息
         /// </summary>
-        public CharacterInfo CurrentCInfo => characterInfo;
+        public int currentCID;
 
         //字符串常量
         private const string LevelStr = "Lv.";
@@ -63,29 +63,20 @@ namespace Demo
         {
             //监听事件
             teamBtn.onClick.AddListener(OnClick);
-
-            EventCenter.Instance.AddEventListener<int>(E_EventType.E_Highlight, Highlight);
         }
-        private void Highlight(int characterID)
-        {
-            if (characterInfo == null) return;
-
-            SetHighlight(characterID==characterInfo.id);
-        }
+      
         
         private void OnDestroy()
         {
             //取消监听
             teamBtn.onClick.RemoveListener(OnClick);
-
-            EventCenter.Instance.RemoveEventListener<int>(E_EventType.E_Highlight, Highlight);   
         }
         /// <summary>
         /// 点击
         /// </summary>
         public void OnClick()
         {
-            EventCenter.Instance.TriggerEvent<int>(E_EventType.E_Highlight,characterInfo.id);
+            UIFacade.Instance.SendNotification(Notifications.HIGHLIGHT,currentCID);
         }
 
         /// <summary>
@@ -93,7 +84,7 @@ namespace Demo
         /// </summary>
         public void UpdateUIDisplay(CharacterInfo cInfo)
         {
-            characterInfo = cInfo;
+            currentCID = cInfo.id;
             //更新角色图片
             headImage.sprite = EditorResMgr.Instance.LoadEditorRes<Sprite>(path + cInfo.headPath);
             //更新角色品质和星级

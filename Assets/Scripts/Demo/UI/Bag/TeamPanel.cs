@@ -64,9 +64,9 @@ namespace Demo
             cInfo.isOnTeam = true;
 
             //让同类型的下阵
-            if (cells[cInfo.type - 1].CurrentCInfo != null)
+            if (cells[cInfo.type - 1] != null)
             {
-                int cId = cells[cInfo.type - 1].CurrentCInfo.id;
+                int cId = cells[cInfo.type - 1].currentCID;
                 EventCenter.Instance.TriggerEvent<(int, bool)>(E_EventType.E_Team, (cId, false));
                 cDic[cId].isOnTeam = false;
             }

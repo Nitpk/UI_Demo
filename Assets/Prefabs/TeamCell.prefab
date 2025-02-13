@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 4755499665179994071}
   - component: {fileID: 9009644466535129424}
   - component: {fileID: 776414048606849702}
-  - component: {fileID: 1520535637647691145}
+  - component: {fileID: -2989659655581790692}
   m_Layer: 5
   m_Name: TeamCell
   m_TagString: Untagged
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1520535637647691145
+--- !u!114 &-2989659655581790692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -557,17 +557,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c664eb3210b114ca86f53a21466662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  qualityText: {fileID: 7707585663874216633}
-  levelText: {fileID: 737048058214979923}
-  starGroup:
-  - {fileID: 7260038022066239408}
-  - {fileID: 809458371762315653}
-  - {fileID: 8425782820604699387}
-  - {fileID: 7786466310212856013}
-  - {fileID: 4361861965211327461}
-  headImage: {fileID: 7532592372899433738}
+  qualityText: {fileID: 0}
+  levelText: {fileID: 0}
+  starGroup: []
+  headImage: {fileID: 0}
   teamBtn: {fileID: 0}
-  highlight: {fileID: 776414048606849702}
+  highlight: {fileID: 0}
 --- !u!1 &5171128934374391938
 GameObject:
   m_ObjectHideFlags: 0

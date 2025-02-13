@@ -3,7 +3,6 @@
  */
 using System;
 using UnityEngine;
-using UnityEngine.Device;
 using UnityEngine.UI;
 
 namespace UIFramework

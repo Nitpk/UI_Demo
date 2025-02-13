@@ -4,7 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UIFramework;
+using MVC_UIFramework;
 
 namespace Demo 
 {
@@ -15,17 +15,15 @@ namespace Demo
         [SerializeField]
         private UISettings uiSettings;
 
-        private UIMgr uiMgr;
 
         private void Awake()
         {
-            //初始化
-            uiMgr = uiSettings.CreateUIInstance();
+            UIFacade.Instance.Startup(uiSettings);
         }
 
         private void Start()
         {
-            uiMgr.ShowPanel(UIName.CharacterMenuPanel);
+            UIFacade.Instance.SendNotification(Notifications.MENU_SHOW);
         }
     }
 }

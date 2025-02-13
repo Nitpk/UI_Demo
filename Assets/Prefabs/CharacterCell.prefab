@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 6949371785291052425}
   - component: {fileID: 7556418288602377951}
   - component: {fileID: 3744227332648638561}
-  - component: {fileID: 6799573404172156158}
+  - component: {fileID: 8798382401112327900}
   m_Layer: 5
   m_Name: CharacterCell
   m_TagString: Untagged
@@ -769,8 +769,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216.1134, y: 54.491714}
-  m_SizeDelta: {x: 198.6451, y: 191.0171}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6949371785291052425
 MonoBehaviour:
@@ -854,7 +854,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6799573404172156158
+--- !u!114 &8798382401112327900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,18 +866,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfee214ac21a194596026e3187c2d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  qualityText: {fileID: 7462722364562359454}
-  typeText: {fileID: 1027306735594769931}
-  levelText: {fileID: 554259698582190586}
-  starGroup:
-  - {fileID: 213803490438650447}
-  - {fileID: 8868762408507374995}
-  - {fileID: 4337337250592997316}
-  - {fileID: 2977688734369844283}
-  - {fileID: 8888831514638195491}
-  characterImage: {fileID: 8125989418017644445}
-  teamImage: {fileID: 2923746754837576358}
-  highlight: {fileID: 3744227332648638561}
+  qualityText: {fileID: 0}
+  typeText: {fileID: 0}
+  levelText: {fileID: 0}
+  starGroup: []
+  characterImage: {fileID: 0}
+  characterBtn: {fileID: 0}
+  teamImage: {fileID: 0}
+  highlight: {fileID: 0}
 --- !u!1 &8951429191845262433
 GameObject:
   m_ObjectHideFlags: 0

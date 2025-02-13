@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TFrameWork;
-using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 namespace UIFramework
 {
@@ -15,9 +14,9 @@ namespace UIFramework
     /// <summary>
     /// 循环滚动列表
     /// </summary>
-    /// <typeparam name="C">数据对应UI（单个格子）</typeparam>
     /// <typeparam name="D">数据</typeparam>
-    public abstract class ViewList<C,D> : MonoBehaviour where C : MonoBehaviour
+    public abstract class ViewList<C,D> : MonoBehaviour
+        where C : MonoBehaviour
     {
         /// <summary>
         /// 列表滚动方向
@@ -394,7 +393,7 @@ namespace UIFramework
                 bundle.Init(rowCellCount);
                 for (int j = 0; j < bundle.Cells.Length; j++)
                 {
-                    bundle.Cells[j] = Instantiate(cell, content);
+                    bundle.Cells[j] = Instantiate(cell, content).GetComponent<C>();
                     bundle.Cells[j].gameObject.SetActive(false);
                 }
             }

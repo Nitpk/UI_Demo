@@ -1146,7 +1146,6 @@ GameObject:
   - component: {fileID: 6849819707593296491}
   - component: {fileID: 6626794757019096324}
   - component: {fileID: 519446008037732667}
-  - component: {fileID: 456136779642098496}
   m_Layer: 5
   m_Name: CharacterBagPanel
   m_TagString: Untagged
@@ -1174,9 +1173,9 @@ RectTransform:
   - {fileID: 2747290722220841123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -358.99, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 610, y: 0}
   m_SizeDelta: {x: 717.98, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6626794757019096324
@@ -1217,26 +1216,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &456136779642098496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4350818430060904594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b782301f9efb43a4c9a3b523e9ce82ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inAnim: {fileID: 0}
-  outAnim: {fileID: 0}
-  properties:
-    layerPriority: 0
-  addBagNumBtn: {fileID: 0}
-  bagNumText: {fileID: 0}
-  characterViewList: {fileID: 0}
-  typeToggles: []
 --- !u!1 &4779766330995612056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,7 +2068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  cell: {fileID: 6799573404172156158, guid: e26244e24e99b9b4b827d8acfd10d181, type: 3}
+  cell: {fileID: 8798382401112327900, guid: e26244e24e99b9b4b827d8acfd10d181, type: 3}
   content: {fileID: 2517971976990134251}
   rowCellCount: 3
   cellSpace: {x: 5, y: 5}
