@@ -14,16 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiLayerMgr: {fileID: 1344289415353603382, guid: 4d15818436ea0884286248fb53f13d4f, type: 3}
   entries:
-  - uiKey: 0
-    prefab: {fileID: 1625735625311233411, guid: d155458c44a1a8a4b853887cfd6e31fa, type: 3}
-    layerType: 100
   - uiKey: 1
-    prefab: {fileID: 4350818430060904594, guid: a89571b8eca48a848ab799b6ec2fdc48, type: 3}
-    layerType: 100
-  - uiKey: 3
-    prefab: {fileID: 6348390497138515527, guid: 7ae824932d072784d87a780db1cc3915, type: 3}
-    layerType: 100
-  - uiKey: 2
-    prefab: {fileID: 1268681563187947629, guid: aec883aceec7e4343b5687ff7aae2762, type: 3}
+    prefab: {fileID: 8838553722693277897, guid: de53b1cb4ada1424881ad6e9ec485985, type: 3}
     layerType: 100
   inactiveUIOnInit: 1

@@ -16,6 +16,10 @@ namespace MVC_UIFramework
         /// <summary>
         /// 角色背包中介
         /// </summary>
+        BagMediator,
+        /// <summary>
+        /// 角色背包列表中介
+        /// </summary>
         CharacterBagMediator,
         /// <summary>
         /// 阵容界面中介

@@ -14,7 +14,7 @@ namespace Demo
 
         public override void Execute(INotification notification)
         {
-            //显示背包
+            //显示背包列表
             var bagMediator = (UIFacade.Instance.RetrieveMediator(MediatorNames.CharacterBagMediator.ToString()))
                 as CharacterBagMediator;
 

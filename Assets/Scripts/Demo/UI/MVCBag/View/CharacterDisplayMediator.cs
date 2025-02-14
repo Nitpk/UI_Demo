@@ -91,6 +91,15 @@ namespace Demo
                     break;
             }
         }
+        protected override void OnShow()
+        {
+            characterLoaded?.SetActive(true);
+        }
+
+        protected override void OnHide()
+        {
+            characterLoaded?.SetActive(false);
+        }
 
         /// <summary>
         /// 更新角色UI

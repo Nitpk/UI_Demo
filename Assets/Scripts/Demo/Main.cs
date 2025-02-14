@@ -15,7 +15,6 @@ namespace Demo
         [SerializeField]
         private UISettings uiSettings;
 
-
         private void Awake()
         {
             UIFacade.Instance.Startup(uiSettings);

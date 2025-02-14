@@ -74,7 +74,10 @@ namespace MVC_UIFramework
                 canvas.sortingOrder = config.baseOrder;
 
                 layerGo.AddComponent<GraphicRaycaster>();
-                layerGo.AddComponent<UIAdapter>();
+                var canvasScaler =layerGo.AddComponent<AdaptCanvasScaler>();
+                canvasScaler.referenceResolution = new Vector2(1920f, 1080f);
+                canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+                //layerGo.AddComponent<SafeAreaAdapter>();
 
                 layers[config.layerType] = new LayerData
                 {
@@ -103,6 +106,7 @@ namespace MVC_UIFramework
         {
             var canvas = uiObject.AddComponentIfMissing<Canvas>();
             var raycaster = uiObject.AddComponentIfMissing<GraphicRaycaster>();
+            uiObject.AddComponent<CanvasGroup>();
 
             if (layerData.config.enableDepth)
             {

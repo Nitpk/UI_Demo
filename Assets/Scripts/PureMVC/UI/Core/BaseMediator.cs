@@ -56,6 +56,22 @@ namespace MVC_UIFramework
         /// </summary>
         public void Show()
         {
+            if (rootObject.TryGetComponent(out CanvasGroup cg))
+            {
+                if (!rootObject.activeSelf) rootObject.SetActive(true);
+
+                
+                if ( cg.alpha < 0.001f )
+                {
+                    cg.alpha = 1f;
+                }
+
+
+                OnShow();
+
+                return;
+            }
+
             if (rootObject.activeSelf) return;
 
             rootObject.SetActive(true);
@@ -71,6 +87,21 @@ namespace MVC_UIFramework
         /// </summary>
         public void Hide()
         {
+            if (rootObject.TryGetComponent(out CanvasGroup cg))
+            {
+                if(!rootObject.activeSelf)rootObject.SetActive(true);
+
+                if (Mathf.Abs( cg.alpha - 1f ) < 0.001f)
+                {
+                    cg.alpha = 0f;
+                }
+
+                OnHide();
+
+                return;
+            }
+
+
             if (!rootObject.activeSelf) return;
 
             rootObject.SetActive(false);

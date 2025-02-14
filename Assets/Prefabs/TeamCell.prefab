@@ -563,6 +563,7 @@ MonoBehaviour:
   headImage: {fileID: 0}
   teamBtn: {fileID: 0}
   highlight: {fileID: 0}
+  currentCID: 0
 --- !u!1 &5171128934374391938
 GameObject:
   m_ObjectHideFlags: 0

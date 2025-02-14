@@ -32,8 +32,9 @@ namespace Demo
         protected override void Init()
         {
             //初始化
-            addBagNumBtn = rootObject.transform.Find("AddBtn").GetComponent<Button>();
-            bagNumText = rootObject.transform.Find("NumText").GetComponent<Text>();
+            var topTrans = rootObject.transform.Find("Top");
+            addBagNumBtn = topTrans.Find("AddBtn").GetComponent<Button>();
+            bagNumText = topTrans.Find("NumText").GetComponent<Text>();
             characterViewList = rootObject.transform.Find("Scroll View").GetComponent<CharacterViewList>();
 
             typeToggles = new List<Toggle>(6);

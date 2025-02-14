@@ -45,6 +45,7 @@ namespace MVC_UIFramework
             return uiKey switch
             {
                 MediatorNames.CharacterMenuMediator => new CharacterMenuMediator(instance, layer),
+                MediatorNames.BagMediator => new BagMediator(instance, layer),
                 MediatorNames.CharacterBagMediator => new CharacterBagMediator(instance, layer),
                 MediatorNames.CharacterDisplayMediator => new CharacterDisplayMediator(instance, layer),
                 MediatorNames.TeamMediator => new TeamMediator(instance, layer),

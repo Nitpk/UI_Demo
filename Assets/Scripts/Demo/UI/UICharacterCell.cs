@@ -90,7 +90,10 @@ namespace Demo
         /// 更新显示信息
         /// </summary>
         public void UpdateUIDisplay(CharacterInfo cInfo)
-        {   
+        {
+            //未初始化时
+            if (characterImage == null) return;
+
             //更新角色图片
             characterImage.sprite = EditorResMgr.Instance.LoadEditorRes<Sprite>(path+cInfo.imagePath);
             //更新角色品质和星级

@@ -69,6 +69,7 @@ namespace Demo
             //显示时，默认显示侠客界面
             characterTog.isOn = true;
             CharacterTogValueChange(true);
+            Debug.Log("aa");
         }
         //点击侠客选项
         private void CharacterTogValueChange(bool isOn)
