@@ -15,6 +15,7 @@ namespace Demo
         protected override void ResetCellData(UICharacterCell cell, CharacterInfo data, int dataIndex)
         {
             cell.gameObject.SetActive(true);
+            cell.Init();
             cell.UpdateUIDisplay(data);
         }
     }

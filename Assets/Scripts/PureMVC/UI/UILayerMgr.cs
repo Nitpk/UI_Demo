@@ -77,7 +77,6 @@ namespace MVC_UIFramework
                 var canvasScaler =layerGo.AddComponent<AdaptCanvasScaler>();
                 canvasScaler.referenceResolution = new Vector2(1920f, 1080f);
                 canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-                //layerGo.AddComponent<SafeAreaAdapter>();
 
                 layers[config.layerType] = new LayerData
                 {

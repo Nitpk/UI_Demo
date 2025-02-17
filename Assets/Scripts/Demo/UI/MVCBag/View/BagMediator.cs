@@ -12,7 +12,7 @@ namespace Demo
 {
     /// <summary>
     /// 背包中介
-    /// 负责管理所有的子中介
+    /// 作为整体，包含所有的子中介
     /// </summary>
     public class BagMediator : BaseMediator
     {
@@ -24,9 +24,13 @@ namespace Demo
         {
             //初始化子中介
             var menuGO = rootObject.transform.Find("CharacterMenuPanel").gameObject;
+            menuGO.SetActive(false);
             var characterBagGO = rootObject.transform.Find("CharacterBagPanel").gameObject;
+            characterBagGO.SetActive(false);
             var displayGO = rootObject.transform.Find("CharacterDisplayPanel").gameObject;
+            displayGO.SetActive(false);
             var teamGO = rootObject.transform.Find("TeamPanel").gameObject;
+            teamGO.SetActive(false);
 
             UIFacade.Instance.RegisterMediator(new CharacterMenuMediator(menuGO, layerType));
             UIFacade.Instance.RegisterMediator(new CharacterBagMediator(characterBagGO, layerType));

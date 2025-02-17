@@ -35,6 +35,9 @@ namespace Demo
         //当前角色信息
         private int cId;
 
+        //是否初始化
+        private bool isInited = false;
+
         //字符串常量
         private const string LevelStr = "Lv.";
         private const string TypeStr = "类型";
@@ -43,6 +46,15 @@ namespace Demo
 
         private void Awake()
         {
+            Init();
+        }
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        public void Init()
+        {
+            if (isInited == true) return;
+
             //初始化
             characterBtn = GetComponent<Button>();
 
@@ -64,6 +76,8 @@ namespace Demo
             highlight = GetComponent<Image>();
 
             cId = -1;
+
+            isInited = true;
         }
 
         private void Start()
@@ -92,7 +106,7 @@ namespace Demo
         public void UpdateUIDisplay(CharacterInfo cInfo)
         {
             //未初始化时
-            if (characterImage == null) return;
+            if (isInited == false) return;
 
             //更新角色图片
             characterImage.sprite = EditorResMgr.Instance.LoadEditorRes<Sprite>(path+cInfo.imagePath);
